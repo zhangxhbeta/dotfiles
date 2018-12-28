@@ -86,3 +86,6 @@ unsetopt correct
 
 # run fortune on new terminal :)
 # fortune
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+

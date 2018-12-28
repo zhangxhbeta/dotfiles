@@ -19,7 +19,7 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export GRAILS_HOME=/usr/local/opt/grails/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
 
-export HOMEBREW_GITHUB_API_TOKEN=b22b9b32acf64cf8bc398093f77f50662717087c
+export HOMEBREW_GITHUB_API_TOKEN=f8c3723ee9f605ce9f4384da8a2e799c654a1d16
 export REACT_EDITOR=vscode
 
 
