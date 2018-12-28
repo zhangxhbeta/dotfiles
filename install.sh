@@ -204,15 +204,9 @@ vim +PluginInstall +qall > /dev/null 2>&1
 bot "installing fonts"
 ./fonts/install.sh
 brew tap caskroom/fonts
-require_cask font-fontawesome
-require_cask font-awesome-terminal-fonts
-require_cask font-hack
-require_cask font-inconsolata-dz-for-powerline
-require_cask font-inconsolata-g-for-powerline
-require_cask font-inconsolata-for-powerline
-require_cask font-roboto-mono
-require_cask font-roboto-mono-for-powerline
-require_cask font-source-code-pro
+require_cask font-inconsolata-nerd-font
+require_cask font-fira-code
+require_cask font-fira-mono-for-powerline
 ok
 
 if [[ -d "/Library/Ruby/Gems/2.0.0" ]]; then
