@@ -9,8 +9,8 @@ export PATH=/usr/local/bin:$PATH
 # GO
 #export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-# The next line updates PATH for the Google Cloud SDK.
-#source "/Users/$(whoami)/Downloads/google-cloud-sdk/path.zsh.inc"
-
-# The next line enables shell command completion for gcloud.
-#source "/Users/$(whoami)/Downloads/google-cloud-sdk/completion.zsh.inc"
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+export PATH=/usr/local/sbin:$PATH
+export PATH=$PATH:$ANDROID_NDK
+export PATH=/usr/local/anaconda3/bin:"$PATH"
+export PATH="$PATH:/Users/zhangxh/Applications/confluent-4.1.2/bin"
