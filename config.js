@@ -4,7 +4,7 @@ module.exports = {
     'ack',
     'ag',
     // alternative to `cat`: https://github.com/sharkdp/bat
-    'bat', 
+    'bat',
     // Install GNU core utilities (those that come with macOS are outdated)
     // Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
     'coreutils',
@@ -22,9 +22,9 @@ module.exports = {
     // so we can do "sed -i 's/foo/bar/' file" instead of "sed -i '' 's/foo/bar/' file"
     'gnu-sed --with-default-names',
     // upgrade grep so we can get things like inverted match (-v)
-    'grep --with-default-names',
+    //'grep --with-default-names',
     // better, more recent grep
-    'homebrew/dupes/grep',
+    //'homebrew/dupes/grep',
     // https://github.com/jkbrzt/httpie
     'httpie',
     // jq is a sort of JSON grep
@@ -37,9 +37,9 @@ module.exports = {
     'openconnect',
     'reattach-to-user-namespace',
     // better/more recent version of screen
-    'homebrew/dupes/screen',
+    //'homebrew/dupes/screen',
     'tmux',
-    'todo-txt',
+    //'todo-txt',
     'tree',
     'ttyrec',
     // better, more recent vim
@@ -50,31 +50,27 @@ module.exports = {
   ],
   cask: [
     //'adium',
-    //'amazon-cloud-drive',
     //'atom',
     // 'box-sync',
-    //'comicbooklover',
     //'diffmerge',
-    'docker', // docker for mac
-    //'dropbox',
-    //'evernote',
-    'flux',
-    'gpg-suite',
+    // 'docker', // docker for mac
+    //'flux',
+    //'gpg-suite',
     //'ireadfast',
     'iterm2',
-    'little-snitch',
-    'macbreakz',
-    'micro-snitch',
-    'signal',
+    //'little-snitch',
+    //'macbreakz',
+    //'micro-snitch',
+    //'signal',
     //'macvim',
     'sizeup',
     //'sketchup',
-    'slack',
+    //'slack',
     'the-unarchiver',
     //'torbrowser',
     //'transmission',
     'visual-studio-code',
-    //'vlc',
+    'vlc',
     'xquartz'
   ],
   gem: [
