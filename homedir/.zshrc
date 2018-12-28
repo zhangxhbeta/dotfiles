@@ -8,7 +8,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
 POWERLEVEL9K_DISABLE_RPROMPT=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-
+POWERLEVEL9K_VCS_GIT_BITBUCKET_ICON=$'\uE703'
 # https://github.com/bhilburn/powerlevel9k#customizing-prompt-segments
 # https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_proxy dir vcs)
@@ -88,4 +88,3 @@ unsetopt correct
 # fortune
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
