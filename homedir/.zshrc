@@ -81,3 +81,6 @@ unsetopt correct
 # fortune
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+bindkey "^P" up-line-or-search
+bindkey "^N" down-line-or-search
