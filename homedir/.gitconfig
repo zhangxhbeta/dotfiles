@@ -163,9 +163,6 @@
 [diff]
   tool = vimdiff
 
-[init]
-  templatedir = ~/.dotfiles/.git_template
-
 [mergetool]
   prompt = false
   keepBackup = false
@@ -177,11 +174,11 @@
   conflictstyle = diff3
 
 [branch]
-    # Automatically set up pull to be --rebase
-    # autosetuprebase = always
+  # Automatically set up pull to be --rebase
+  # autosetuprebase = always
 
 [credential]
-    # cache creds (git help credential-cache)
+  # cache creds (git help credential-cache)
   helper = cache
 
 [filter "tabspace"]
@@ -189,7 +186,7 @@
 
 [push]
   default = matching
-	followTags = true
+  followTags = true
 
 [filter "media"]
   required = true
