@@ -202,11 +202,9 @@ bot "Installing vim plugins"
 vim +PluginInstall +qall > /dev/null 2>&1
 
 bot "installing fonts"
-./fonts/install.sh
 brew tap caskroom/fonts
-require_cask font-inconsolata-nerd-font
+require_cask font-hack-nerd-font
 require_cask font-fira-code
-require_cask font-fira-mono-for-powerline
 ok
 
 if [[ -d "/Library/Ruby/Gems/2.0.0" ]]; then
@@ -886,8 +884,6 @@ bot "Terminal & iTerm2"
 #running "Enable “focus follows mouse” for Terminal.app and all X11 apps"
 # i.e. hover over a window and start `typing in it without clicking first
 defaults write com.apple.terminal FocusFollowsMouse -bool true
-#defaults write org.x.X11 wm_ffm -bool true;ok
-open "./configs/Solarized Dark Patch.itermcolors";ok
 
 running "Don’t display the annoying prompt when quitting iTerm"
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false;ok
@@ -906,8 +902,8 @@ defaults write com.googlecode.iterm2 HotkeyModifiers -int 262401;
 running "Make iTerm2 load new tabs in the same directory"
 /usr/libexec/PlistBuddy -c "set \"New Bookmarks\":0:\"Custom Directory\" Recycle" ~/Library/Preferences/com.googlecode.iterm2.plist
 running "setting fonts"
-defaults write com.googlecode.iterm2 "Normal Font" -string "Hack-Regular 12";
-defaults write com.googlecode.iterm2 "Non Ascii Font" -string "RobotoMonoForPowerline-Regular 12";
+defaults write com.googlecode.iterm2 "Normal Font" -string "HackNerdFontComplete-Regular 12";
+defaults write com.googlecode.iterm2 "Non Ascii Font" -string "HackNerdFontComplete-Regular 12";
 ok
 running "reading iterm settings"
 defaults read -app iTerm > /dev/null 2>&1;
