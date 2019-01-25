@@ -12,7 +12,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # buzzphrase commit
 # used for my presentation decks when I have nothing to say about the commit
-alias bpc='git add -A . && git cam "$(buzzphrase 2)" && git push'
+# alias bpc='git add -A . && git cam "$(buzzphrase 2)" && git push'
 
 # recursive dos2unix in current directory
 alias dos2lf='dos2unix `find ./ -type f`'
@@ -41,7 +41,6 @@ alias gitdev='git checkout develop; git-up; git branch --merged develop | grep -
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias iplocal="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Show active network interfaces
@@ -98,3 +97,9 @@ alias lssvn='find * -type f | grep -v "\.svn" | grep -v "\.DS_Store"'
 alias proxy='export socks5_proxy=socks5://127.0.0.1:1086;export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;'
 alias unproxy='unset socks5_proxy http_proxy https_proxy'
 
+alias tree1='tree -L 1 --filelimit 20'
+alias tree2='tree -L 2 --filelimit 20'
+alias tree3='tree -L 3 --filelimit 20'
+alias tree4='tree -L 4 --filelimit 20'
+
+alias screen-docker='screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty'
