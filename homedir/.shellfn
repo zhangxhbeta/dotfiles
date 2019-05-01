@@ -126,3 +126,8 @@ function fo() {
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
 }
+
+# force remove docker images match specify name
+function drmi() {
+    docker image rmi -f $(docker images |grep "$1" |awk '{print $3}')
+}
