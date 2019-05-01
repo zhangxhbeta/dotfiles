@@ -6,7 +6,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 export JAVA_HOME=`/usr/libexec/java_home`
-export JAVA8_HOME=`/usr/libexec/java_home -v1.8`
+#export JAVA8_HOME=`/usr/libexec/java_home -v1.8`
 #export JAVA6_HOME=`/usr/libexec/java_home -v1.6`
 
 export MAVEN_OPTS="-Dfile.encoding=UTF-8 -Xms128m -Xmx512m"
