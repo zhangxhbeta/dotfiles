@@ -1,5 +1,13 @@
 把 dotfiles 配置放到云上，方便迁移
 
+## 初始化步骤
+
+```bash
+cd
+git clone --recurse-submodules git@github.com:zhangxhbeta/dotfiles.git .dotfiles
+./install.sh
+```
+
 * 定制 home 目录的很多配置文件
 * 设定一些系统设置
 
