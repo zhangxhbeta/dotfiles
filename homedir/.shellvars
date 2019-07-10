@@ -5,9 +5,10 @@ bindkey -v
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export JAVA_HOME=`/usr/libexec/java_home`
-#export JAVA8_HOME=`/usr/libexec/java_home -v1.8`
+export JAVA8_HOME=`/usr/libexec/java_home -v1.8`
 #export JAVA6_HOME=`/usr/libexec/java_home -v1.6`
+
+export JAVA_HOME=$JAVA8_HOME
 
 export MAVEN_OPTS="-Dfile.encoding=UTF-8 -Xms128m -Xmx512m"
 export ANDROID_HOME="/Users/zhangxh/Applications/adt-bundle-mac-x86_64/sdk"
@@ -29,3 +30,5 @@ export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
 export NVM_DIR=~/.nvm
 
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+export GOPATH=$HOME/Documents/Development/go
