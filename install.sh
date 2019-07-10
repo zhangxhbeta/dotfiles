@@ -2,7 +2,7 @@
 
 ###########################
 # This script installs the dotfiles and runs all other system configuration scripts
-# @author Adam Eivy
+# @author Adam Eivy and me, Xiaohui Zhang
 ###########################
 
 # include my library helpers for colorized echo and require_brew, etc
@@ -11,6 +11,11 @@ source ./lib_sh/requirers.sh
 
 # Disable homebrew autoupdate
 export HOMEBREW_NO_AUTO_UPDATE=1
+
+# Proxy through socks
+export socks5_proxy=socks5://127.0.0.1:1086
+export http_proxy=http://127.0.0.1:1087
+export https_proxy=http://127.0.0.1:1087
 
 bot "Hi! I'm going to install tooling and tweak your system settings. Here I go..."
 
@@ -23,17 +28,6 @@ if ! sudo grep -q "%wheel		ALL=(ALL) NOPASSWD: ALL #atomantic/dotfiles" "/etc/su
 
   # Keep-alive: update existing sudo time stamp until the script has finished
   while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
-  bot "Do you want me to setup this machine to allow you to run sudo without a password?\nPlease read here to see what I am doing:\nhttp://wiki.summercode.com/sudo_without_a_password_in_mac_os_x \n"
-
-  read -r -p "Make sudo passwordless? [y|N] " response
-
-  if [[ $response =~ (yes|y|Y) ]];then
-      sudo cp /etc/sudoers /etc/sudoers.back
-      echo '%wheel		ALL=(ALL) NOPASSWD: ALL #atomantic/dotfiles' | sudo tee -a /etc/sudoers > /dev/null
-      sudo dscl . append /Groups/wheel GroupMembership $(whoami)
-      bot "You can now run sudo commands without password!"
-  fi
 fi
 
 grep 'user = GITHUBUSER' ./homedir/.gitconfig > /dev/null 2>&1
@@ -126,16 +120,16 @@ else
   running "updating homebrew"
   brew update
   ok
-  bot "before installing brew packages, we can upgrade any outdated packages."
-  read -r -p "run brew upgrade? [y|N] " response
-  if [[ $response =~ ^(y|yes|Y) ]];then
-      # Upgrade any already-installed formulae
-      action "upgrade brew packages..."
-      brew upgrade
-      ok "brews updated..."
-  else
-      ok "skipped brew package upgrades.";
-  fi
+  # bot "before installing brew packages, we can upgrade any outdated packages."
+  # read -r -p "run brew upgrade? [y|N] " response
+  # if [[ $response =~ ^(y|yes|Y) ]];then
+  #     # Upgrade any already-installed formulae
+  #     action "upgrade brew packages..."
+  #     brew upgrade
+  #     ok "brews updated..."
+  # else
+  #     ok "skipped brew package upgrades.";
+  # fi
 fi
 
 #####
@@ -205,7 +199,6 @@ bot "Installing vim plugins"
 vim +PluginInstall +qall > /dev/null 2>&1
 
 bot "installing fonts"
-brew tap caskroom/fonts
 require_cask font-hack-nerd-font
 require_cask font-fira-code
 ok
