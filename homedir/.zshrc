@@ -60,21 +60,22 @@ source $ZSH/oh-my-zsh.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-source /usr/local/opt/nvm/nvm.sh
+#source /usr/local/opt/nvm/nvm.sh
 
-autoload -U add-zsh-hook
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use &> /dev/null
-  elif [[ $(nvm version) != $(nvm version default)  ]]; then
-    nvm use default &> /dev/null
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+#autoload -U add-zsh-hook
+#load-nvmrc() {
+#  if [[ -f .nvmrc && -r .nvmrc ]]; then
+#    nvm use &> /dev/null
+#  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+#    nvm use default &> /dev/null
+#  fi
+#}
+#add-zsh-hook chpwd load-nvmrc
+#load-nvmrc
 
 # Customize to your needs...
 unsetopt correct
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # run fortune on new terminal :)
 # fortune
