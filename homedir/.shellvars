@@ -11,8 +11,8 @@ export JAVA8_HOME=`/usr/libexec/java_home -v1.8`
 export JAVA_HOME=$JAVA8_HOME
 
 export MAVEN_OPTS="-Dfile.encoding=UTF-8 -Xms128m -Xmx512m"
-export ANDROID_HOME="/Users/zhangxh/Applications/adt-bundle-mac-x86_64/sdk"
-export ANDROID_NDK="/Users/zhangxh/Applications/android-ndk-r10e"
+export ANDROID_HOME="/Users/zhangxh/Library/Android/sdk"
+export ANDROID_NDK="/Users/zhangxh/Library/Android/ndk"
 
 export KAFKA_HOME="/Users/zhangxh/Applications/confluent-4.1.2"
 
