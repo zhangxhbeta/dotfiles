@@ -90,3 +90,9 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 
 bindkey "^P" up-line-or-search
 bindkey "^N" down-line-or-search
+
+
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
