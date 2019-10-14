@@ -85,7 +85,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
 # init pyenv
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+# if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 
 bindkey "^P" up-line-or-search
