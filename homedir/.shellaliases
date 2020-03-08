@@ -95,6 +95,7 @@ alias cleardns='sudo networksetup -setdnsservers Wi-Fi empty'
 alias lssvn='find * -type f | grep -v "\.svn" | grep -v "\.DS_Store"'
 alias proxy='export socks5_proxy=socks5://127.0.0.1:1086;export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087;'
 alias unproxy='unset socks5_proxy http_proxy https_proxy'
+alias pc='proxychains4'
 
 alias tree1='tree -L 1 --filelimit 20'
 alias tree2='tree -L 2 --filelimit 20'
