@@ -32,3 +32,6 @@ export NVM_DIR=~/.nvm
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 export GOPATH=$HOME/Documents/Development/go
+export GO111MODULE=on
+export GOPROXY=https://mirrors.aliyun.com/goproxy/
+
