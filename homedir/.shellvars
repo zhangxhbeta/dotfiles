@@ -35,3 +35,5 @@ export GOPATH=$HOME/Documents/Development/go
 export GO111MODULE=on
 export GOPROXY=https://mirrors.aliyun.com/goproxy/
 
+export NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
+
