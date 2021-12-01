@@ -48,6 +48,7 @@
   # prevent crlf (then you will have to deal with the problem -- dos2unix, etc)
   #safecrlf = true
   editor = vim
+  commitGraph = true
   #editor = subl -w
 
 [alias]
@@ -197,3 +198,12 @@
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
+[gc]
+  writeCommitGraph = true
+[receive]
+  advertisePushOptions = true
+[i18n]
+  commitencoding = utf-8
+  logoutputencoding = utf-8
+[init]
+  defaultBranch = main
