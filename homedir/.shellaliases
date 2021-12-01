@@ -110,3 +110,5 @@ alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
 
 alias gstdir="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd {} && git status -s && echo)' \;"
 
+alias jupyter-tmux='tmux new -d -s jupyter "jupyter-lab --no-browser"';
+alias tas='tmux attach-session -t'
