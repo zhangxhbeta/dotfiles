@@ -30,8 +30,10 @@ export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
 export NVM_DIR=~/.nvm
 
 export HOMEBREW_NO_AUTO_UPDATE=1
+export HOMEBREW_NO_INSTALL_CLEANUP=1
 
 export GOPATH=$HOME/Documents/Development/go
 
 export NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node/
+export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/
 
