@@ -104,6 +104,7 @@ alias tree4='tree -L 4 --filelimit 20'
 
 alias screen-docker='screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty'
 alias dc='docker-compose'
+alias dps='docker ps'
 
 alias loadrvm='[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"'
 alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"'
@@ -112,3 +113,4 @@ alias gstdir="find . -maxdepth 1 -mindepth 1 -type d -exec sh -c '(echo {} && cd
 
 alias jupyter-tmux='tmux new -d -s jupyter "jupyter-lab --no-browser"';
 alias tas='tmux attach-session -t'
+
