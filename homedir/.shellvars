@@ -7,8 +7,10 @@ export LANG=en_US.UTF-8
 
 export JAVA8_HOME=`/usr/libexec/java_home -v1.8.0`
 export JAVA11_HOME=`/usr/libexec/java_home -v11`
+export JAVA21_HOME=`/usr/libexec/java_home -v21`
+export JAVA17_HOME=`/usr/libexec/java_home -v17`
 
-export JAVA_HOME=$JAVA11_HOME
+export JAVA_HOME=$JAVA17_HOME
 
 export MAVEN_OPTS="-Dfile.encoding=UTF-8 -Xms128m -Xmx512m"
 export ANDROID_HOME="/Users/zhangxh/Library/Android/sdk"
